@@ -1,0 +1,57 @@
+Array:- An array is a collection of similar types of data items stored in a continous memory location.Its elements starts with index number 0.
+
+syntax:- datatype arrayname[size];
+	 int arr[]=new int[5];
+	 char ch[];
+	ch=new char[15];
+	 float sal[15];
+         long int eid[4];
+
+Types Of Array:-
+
+1.Single Dimentional Array:- Having single row & multiple col.
+				int arr[]=new int[10];
+				char ch[]=new char[15];
+2.Double Dimentional Array:- Having multiple row & multiple col.
+				int arr[][]=new int[3][3];
+				float sal[][]=new float[4][6];
+3.Jacked Array:- having diff no. of rows & cols.
+		int a[][];
+		a[0]=new int[][3];
+		a[1]=new int [][2];
+		a[2]=new int[][4];
+
+
+class arr1
+{
+  psvm(String ar[])
+  {
+    Scanner ob=new Scanner(System.in);
+    int arr[]=new int[5];
+      
+    
+    for(int i=0;i<=4;i++)
+     {
+       System.out.println("Enter "+ i+1 +" value ");
+       arr[i]=ob.nextInt();
+     }
+     for(int i=0;i<=4;i++)
+     {
+       System.out.println(arr[i]);
+       
+     }
+}
+}
+
+
+Programs Of array:- Single dimentional array
+1. Wap to print all even no from the array.
+2. Wap to print the array in reverse order.
+3. Wap to print the sum & avg of float type array.
+4. Wap to print all prime numbers from the array.
+
+rishitnagar87@gmail.com    
+				
+
+
+       
