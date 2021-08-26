@@ -12,7 +12,7 @@ class prime
 	{
 	    if(n % i == 0)
 	    {
-		f++;
+			f++;
 	    }
 	}
 	if (f == 2)
