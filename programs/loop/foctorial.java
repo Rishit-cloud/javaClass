@@ -1,3 +1,5 @@
+package programs.loop;
+
 import java.util.*;
 
 class factorial

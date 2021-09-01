@@ -1,3 +1,5 @@
+package programs.Class;
+
 import java.util.Scanner;
 
 class classes {

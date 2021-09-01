@@ -1,3 +1,5 @@
+package programs.array;
+
 import java.util.Scanner;
 
 class even{
