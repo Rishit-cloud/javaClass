@@ -1,5 +1,3 @@
-package programs.Class;
-
 import java.util.Scanner;
 
 class classes {
@@ -15,7 +13,7 @@ class classes {
         System.out.println("a = " + a);
     }
 
-    public static void main(String[] args) 
+    public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
         int b = input.nextInt();
