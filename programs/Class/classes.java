@@ -15,8 +15,9 @@ class classes {
 
     public static void main(String[] args)
     {
-        Scanner input = new Scanner(System.in);
-        int b = input.nextInt();
+        Scanner inp = new Scanner(System.in);
+        System.out.println("Enter a number : ");
+        int b = inp.nextInt();
         classes ob = new classes(b);
         System.out.println();
         ob.func();

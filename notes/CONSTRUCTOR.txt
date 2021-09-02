@@ -1,0 +1,83 @@
+1. if a class name & func name is same then it is called a cons.
+2. constructor can take parameter but it will never return any value not even void.
+3. cons are made to initialize class variables.
+4. cons are invoked automatically when object of class has been created.
+
+types of cons
+1.default cons.
+2.paramerised cons.
+3.copy cons. (receiving object as parameter)
+
+1)Example of default cons:-
+public class CONS1 
+{
+    int x,y;
+   CONS1()
+   {
+       System.out.println("Example Of Default Cons");
+   }
+   void fun()
+   {
+      System.out.println("Example of method"); 
+   }
+    public static void main(String[] args) 
+    {
+       CONS1 ob1=new CONS1();
+ 	    CONS1 ob2=new CONS1();
+       ob1.fun();
+       ob2.fun();
+    }
+}
+
+
+2)Example of Parameterised cons:-
+public class CONS1 
+{
+   int x,y;
+   CONS1(int x,int y)
+   {
+      this.x=x;
+      this.y=y; 
+   }
+   void fun()
+   {
+      System.out.println("x= "+x+ "y= "+y); 
+   }
+    public static void main(String[] args) 
+    {
+       CONS1 ob1=new CONS1(10,20);
+ 	CONS1 ob2=new CONS1(30,40);
+       ob1.fun();
+       ob2.fun();
+    }
+}
+
+
+
+
+3)Example of Copy Cons:-
+public class CONS1 
+{
+    int x,y;
+   CONS1(int x,int y)
+   {
+       this.x=x;
+       this.y=y;
+   }
+   CONS1(CONS1 ob)
+   {
+      this.x=ob.x;
+      this.y=ob.y;
+   }
+   void fun()
+   {
+      System.out.println("x= "+x+ "y= "+y); 
+   }
+    public static void main(String[] args) 
+    {
+       CONS1 ob=new CONS1(10,20);
+       CONS1 ob2=new CONS1(ob);
+       ob.fun();
+       ob2.fun();
+    }
+}
