@@ -1,0 +1,114 @@
+1.Object
+2.Class
+3.Encapsulation	(Grouping)
+4.Abstraction	(Hiding)
+5.Polymorphism (Many Forms)
+6.Inheritance	(Inheriting the features)
+
+
+Polymorphism:- using a single item with different means.
+1)Static Poly/Compile Time Poly (Constructor/Function Overloading)
+2)Dynamic Poly/Run Time Poly (Function Overriding)
+
+Cons Overloading: if a class contains more than single cons then it is cons overloading. parameter must be different.
+
+Function Overloading: If a class contains more than one function with same name then it is called function overloading.parameter must be different.
+
+We can differentiate these parameter on basis of:-
+
+1) A/c to no of parameter:-
+   void fun(int i)
+   void fun(int i,int j)
+   void fun(int i,int j,int k)
+
+2) A/c to Type of parameter:-
+   void fun(int i)
+   void fun(String st)
+   void fun(float x)
+
+1) A/c to sequence of parameter:-
+   void fun(int i,String st)
+   void fun(String st,int i)
+  
+
+class stud
+{
+  int id;
+  String nm;
+  float avg;
+
+  stud()
+  { System.out.println("Default Constructor");  }
+
+  stud(int id,String nm,float avg)
+  {
+    id=id;
+    this.nm=nm;
+    this.avg=avg;
+  }
+  void fun()
+  {  System.out.println(id+nm+avg); }
+ 
+  psvm(String a[])
+  {
+    stud o1=new stud();
+    stud o2=new stud(101,"Amit",87);
+    new stud().fun();
+  
+    o1.fun();
+    o2.fun();
+  }
+}
+Output:-
+Default Constructor
+Default Constructor
+0,NULL,0.0
+0,NULL,0.0
+101,Amit,87
+
+Function Overloading
+
+class bank
+{
+  int bal;
+  bank(int bal)
+  {this.bal=bal;}
+
+  void withdraw(String type,int amt)
+  {
+    if(bal-amt<=1000)
+     {S.o.p("Cant Withdraw");}
+    else
+     {
+       bal=bal-amt;
+      S.o.p("A/c Type= "+type+" Bal="+bal);
+     }
+  }
+
+  void withdraw(int amt,String type)
+  {
+    if(bal-amt<=0)
+     {S.o.p("Cant Withdraw");}
+    else
+     {
+       bal=bal-amt;
+       S.o.p("A/c Type= "+type+" Bal="+bal);
+     }
+  }
+
+  psvm(String ar[]
+  {
+    bank sbi=new bank(50000);
+    bank pnb=new bank(40000);
+    sbi.withdraw("Savings",30000);
+    pnb.withdraw(60000,"Current");
+  }
+}
+
+    
+  
+
+
+
+
+
